@@ -12,7 +12,7 @@ Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclu
 
 1. Sirva esta pasta por HTTPS ou servidor local, como VS Code Live Server.
 2. Abra o endereço servido no navegador. A abertura por `file://` pode impedir a autenticação e as chamadas de rede.
-3. Configure o Supabase conforme [`CONFIGURAR-SUPABASE.md`](CONFIGURAR-SUPABASE.md).
+3. No painel Supabase, execute `supabase-schema.sql`. Para banco já existente, execute também `supabase-migration-installment-anchor.sql`.
 
 ## Conteúdo
 
@@ -20,11 +20,10 @@ Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclu
 - `supabase-config.js`: URL do projeto e chave publicável.
 - `supabase-schema.sql`: tabelas, políticas RLS e autorização do usuário.
 - `supabase-migration-installment-anchor.sql`: migração para datas de referência das parcelas.
-- `CONFIGURAR-SUPABASE.md`: passos de configuração e observações de segurança.
 
 ## Publicar
 
-Para publicar como site, use um host HTTPS e configure a URL de retorno correspondente em **Supabase → Authentication → URL Configuration**. GitHub Pages pode hospedar os arquivos estáticos, mas o repositório deve ser privado enquanto não houver revisão adicional e confirmação de que nenhuma informação pessoal foi incluída.
+Para publicar como site, use um host HTTPS e configure a URL de retorno correspondente em **Supabase → Authentication → URL Configuration**. Mantenha o repositório privado enquanto o aplicativo usa uma conta compartilhada e contém a configuração do seu projeto Supabase.
 
 Não envie backups JSON, capturas com valores financeiros, arquivos `.env`, tokens, senhas ou chaves secretas. O `.gitignore` bloqueia os formatos comuns, mas sempre confira a lista de arquivos antes de fazer push.
 
