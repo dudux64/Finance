@@ -62,3 +62,46 @@
 /* Tabela de lançamentos com ações sempre visíveis */
 .transactions-panel table{width:100%;table-layout:fixed}.transactions-panel th:nth-child(1),.transactions-panel td:nth-child(1){width:24%}.transactions-panel th:nth-child(2),.transactions-panel td:nth-child(2){width:14%}.transactions-panel th:nth-child(3),.transactions-panel td:nth-child(3){width:12%}.transactions-panel th:nth-child(4),.transactions-panel td:nth-child(4){width:12%}.transactions-panel th:nth-child(5),.transactions-panel td:nth-child(5){width:18%}.transactions-panel th:nth-child(6),.transactions-panel td:nth-child(6){width:20%;padding-left:2px;padding-right:2px}.transactions-panel tbody td{overflow:hidden;text-overflow:ellipsis}.transactions-panel td:first-child{min-width:0}.transaction-name,.transaction-sub{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row-actions{gap:1px;flex-wrap:nowrap}.row-actions .mini-action{width:24px;height:24px;flex:0 0 24px;padding:3px}.transaction-delete-action{width:24px;height:24px;flex:0 0 24px;padding:4px}.transaction-delete-action span{display:none}.transactions-panel .status-pill{max-width:100%;overflow:hidden;text-overflow:ellipsis}
 @media(max-width:900px){.panel.panel-expanded{inset:8px!important;max-height:calc(100dvh - 16px);padding:14px}.panel-expanded .table-wrap{overflow:auto}.transactions-panel th:nth-child(1),.transactions-panel td:nth-child(1){width:23%}.transactions-panel th:nth-child(2),.transactions-panel td:nth-child(2){width:13%}.transactions-panel th:nth-child(3),.transactions-panel td:nth-child(3){width:13%}.transactions-panel th:nth-child(4),.transactions-panel td:nth-child(4){width:13%}.transactions-panel th:nth-child(5),.transactions-panel td:nth-child(5){width:18%}.transactions-panel th:nth-child(6),.transactions-panel td:nth-child(6){width:20%}}
+
+/* Erros longos de sincronização precisam continuar legíveis em telas estreitas. */
+.toast{max-width:min(620px,calc(100vw - 28px));white-space:normal;overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:600px){.toast{right:14px;bottom:14px;left:14px;width:auto;max-width:none;align-items:flex-start}}
+
+/* Menus rápidos nos campos mais usados dos lançamentos */
+.quick-edit-chip{max-width:100%;display:inline-flex;align-items:center;gap:4px;border:1px solid transparent;border-radius:7px;padding:4px 6px;background:transparent;color:inherit;font:inherit;font-size:9px;font-weight:700;cursor:pointer;vertical-align:middle}
+.quick-edit-chip:hover,.quick-edit-chip:focus-visible{border-color:var(--line);background:var(--surface);outline:0;box-shadow:0 0 0 2px var(--green-soft)}
+.quick-edit-chip svg{width:10px;height:10px;flex:none;opacity:.65}
+.category-chip{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.transactions-panel .quick-edit-chip.status-pill{max-width:100%;}
+.quick-edit-menu{position:fixed;z-index:150;width:250px;max-height:min(320px,calc(100dvh - 20px));overflow:hidden;padding:7px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);box-shadow:0 14px 38px rgba(16,31,35,.2)}
+.quick-edit-search{width:100%;height:34px;margin-bottom:5px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);outline:0;font-size:11px}
+.quick-edit-search:focus{border-color:var(--green)}
+.quick-edit-options{max-height:260px;overflow:auto;overscroll-behavior:contain}
+.quick-edit-option{width:100%;display:flex;align-items:center;gap:8px;padding:8px;border:0;border-radius:7px;background:transparent;color:var(--ink);text-align:left;font-size:11px;cursor:pointer}
+.quick-edit-option:hover,.quick-edit-option.selected{background:var(--green-soft);color:var(--green)}
+.quick-edit-option svg{width:14px;height:14px;flex:none}
+.quick-edit-option span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.quick-edit-empty{display:block;padding:10px;color:var(--muted);font-size:11px}
+:root[data-theme='dark'] .quick-edit-menu{box-shadow:0 14px 38px rgba(0,0,0,.45)}
+
+.category-panel .panel-head{align-items:flex-start}
+.category-mode-toggle{display:inline-flex;flex:none;gap:2px;padding:3px;border:1px solid var(--line);border-radius:9px;background:var(--bg)}
+.category-mode-toggle button{border:0;border-radius:6px;padding:5px 8px;background:transparent;color:var(--muted);font-size:9px;font-weight:700;line-height:1.2}
+.category-mode-toggle button[aria-pressed='true']{background:var(--surface);color:var(--green);box-shadow:0 1px 4px rgba(20,40,45,.12)}
+.category-mode-toggle button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.sort-control{min-width:0;max-width:148px;height:28px;padding:0 7px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--muted);font-size:9px;font-weight:600;outline:0;cursor:pointer}
+.sort-control:focus{border-color:var(--green);box-shadow:0 0 0 2px var(--green-soft)}
+.panel-head-actions .sort-control{max-width:132px}
+@media(max-width:1100px){.sort-control{max-width:112px}.panel-head-actions .sort-control{max-width:105px}}
+
+/* Ordenação compacta e valores alinhados nos vencimentos */
+.sort-control-wrap{display:flex;align-items:center;justify-content:center;gap:4px;flex:0 0 auto;min-width:0;height:29px;padding:0 6px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--muted)}
+.sort-control-wrap>svg{width:12px;height:12px;flex:none;color:var(--green)}
+.sort-control-wrap .sort-control{width:112px;max-width:112px;height:25px;padding:0 3px!important;border:0!important;background:transparent!important;color:var(--ink);font-size:9px;font-weight:600;box-shadow:none!important}
+.panel-head-actions{align-items:center;gap:6px}
+.pending-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(92px,max-content) 26px;justify-content:initial;align-items:center;gap:8px}
+.pending-item-copy{min-width:0}
+.pending-name{max-width:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pending-value{min-width:92px;text-align:right;justify-self:end;font-variant-numeric:tabular-nums}
+.pending-action-spacer{width:26px;height:26px;display:block}
+@media(max-width:1100px){.sort-control-wrap .sort-control{width:96px;max-width:96px}.pending-item{grid-template-columns:minmax(0,1fr) minmax(84px,max-content) 24px;gap:5px}.pending-value{min-width:84px}.pending-action-spacer{width:24px}}
