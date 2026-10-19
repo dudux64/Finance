@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Prévia do painel Finança</title>
+  <desc id="desc">Exemplo visual do dashboard com valores e registros ocultos para proteger a privacidade.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#111a2b"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#5ee0ad"/><stop offset="1" stop-color="#31bd8d"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#02060d" flood-opacity=".28"/></filter>
+    <style>
+      .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#edf3fa}.m{fill:#91a0b4;font-family:Inter,Segoe UI,Arial,sans-serif}.card{fill:#121d2d;stroke:#26354a;stroke-width:1}.line{stroke:#26354a}.blur{fill:#718097;opacity:.68}
+    </style>
+  </defs>
+  <rect width="1280" height="760" rx="28" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1232" height="712" rx="24" fill="#0e1725" stroke="#26364b" filter="url(#shadow)"/>
+  <rect x="24" y="24" width="235" height="712" rx="24" fill="#101b2a"/>
+  <path d="M259 24v712" stroke="#26354a"/>
+  <rect x="50" y="53" width="38" height="38" rx="12" fill="url(#accent)"/>
+  <path d="M61 72h16M69 64v16" stroke="#09251b" stroke-width="3" stroke-linecap="round"/>
+  <text x="101" y="72" class="t" font-size="20" font-weight="700">finança.</text>
+  <text x="101" y="89" class="m" font-size="9" letter-spacing="1.4">PAINEL PESSOAL</text>
+  <text x="51" y="139" class="m" font-size="10" letter-spacing="1.5">PLANEJAMENTO</text>
+  <rect x="42" y="155" width="199" height="43" rx="12" fill="#1b2c3a"/>
+  <circle cx="65" cy="176" r="8" fill="none" stroke="#5ee0ad" stroke-width="2"/><path d="M65 171v10m-4-6h8" stroke="#5ee0ad" stroke-width="1.4"/>
+  <text x="84" y="181" class="t" font-size="13" font-weight="600">Visão geral</text>
+  <g class="m" font-size="13"><text x="84" y="230">Calendário</text><text x="84" y="274">Investimentos</text><text x="84" y="318">Lançamentos</text><text x="84" y="362">Dívidas</text></g>
+  <g stroke="#91a0b4" fill="none" stroke-width="1.6"><rect x="57" y="215" width="15" height="14" rx="3"/><path d="M57 220h15M61 212v6m7-6v6"/><path d="M57 260h16l-2 11H59zM59 260l3-5h7l3 5"/><path d="M58 304h14v15H58zM61 309h8m-8 4h8"/><circle cx="65" cy="353" r="8"/><path d="M65 347v7l5 3"/></g>
+  <path d="M42 662h199" class="line"/><circle cx="64" cy="697" r="16" fill="#204034"/><text x="59" y="702" class="t" font-size="14" font-weight="700">D</text><text x="88" y="695" class="t" font-size="12" font-weight="600">Dudu</text><text x="88" y="711" class="m" font-size="10">PERFIL ATUAL</text>
+
+  <text x="292" y="75" class="m" font-size="10" letter-spacing="1.8">RESUMO FINANCEIRO</text>
+  <text x="292" y="111" class="t" font-size="29" font-weight="700">Visão geral</text>
+  <text x="292" y="137" class="m" font-size="13">Acompanhe seu mês com clareza.</text>
+  <rect x="1061" y="61" width="151" height="40" rx="11" fill="#172437" stroke="#30415a"/><text x="1080" y="86" class="t" font-size="12">Outubro 2026</text><path d="m1188 78 5 5 5-5" fill="none" stroke="#91a0b4" stroke-width="1.5"/>
+
+  <g>
+    <rect x="292" y="165" width="286" height="112" rx="16" class="card"/><rect x="596" y="165" width="286" height="112" rx="16" class="card"/><rect x="900" y="165" width="312" height="112" rx="16" class="card"/>
+    <text x="314" y="196" class="m" font-size="12">Saldo do mês</text><text x="314" y="237" class="t" font-size="27" font-weight="700">••••••••</text><circle cx="546" cy="194" r="15" fill="#193a32"/><path d="M539 194h14m-7-7v14" stroke="#5ee0ad" stroke-width="1.8"/>
+    <text x="618" y="196" class="m" font-size="12">Receitas do mês</text><text x="618" y="237" class="t" font-size="27" font-weight="700">••••••••</text><circle cx="850" cy="194" r="15" fill="#193a32"/><path d="m844 197 5-6 4 3" fill="none" stroke="#5ee0ad" stroke-width="2"/>
+    <text x="922" y="196" class="m" font-size="12">Despesas do mês</text><text x="922" y="237" class="t" font-size="27" font-weight="700">••••••••</text><circle cx="1180" cy="194" r="15" fill="#3b2730"/><path d="m1175 190 5 5 5-5" fill="none" stroke="#ff7181" stroke-width="2"/>
+  </g>
+  <rect x="292" y="299" width="579" height="248" rx="17" class="card"/><text x="316" y="332" class="t" font-size="15" font-weight="650">Receitas e despesas</text><text x="316" y="353" class="m" font-size="11">Visão de evolução mensal</text>
+  <g stroke="#243247" stroke-width="1"><path d="M336 397h522M336 437h522M336 477h522M336 517h522"/></g>
+  <path d="M343 490 C397 472 420 438 470 450 S548 493 600 434 S689 425 730 400 S800 418 850 378" fill="none" stroke="#5ee0ad" stroke-width="3"/>
+  <path d="M343 505 C400 498 420 474 470 486 S552 465 600 476 S683 455 730 466 S799 445 850 452" fill="none" stroke="#9b8cff" stroke-width="3"/>
+  <g class="m" font-size="9"><text x="338" y="536">JUL</text><text x="439" y="536">AGO</text><text x="541" y="536">SET</text><text x="643" y="536">OUT</text><text x="745" y="536">NOV</text></g>
+  <rect x="889" y="299" width="323" height="248" rx="17" class="card"/><text x="913" y="332" class="t" font-size="15" font-weight="650">Próximos vencimentos</text><text x="913" y="353" class="m" font-size="11">Contas previstas para este mês</text>
+  <g><circle cx="924" cy="394" r="5" fill="#f5b65a"/><rect x="940" y="385" width="151" height="8" rx="4" class="blur"/><rect x="1112" y="385" width="76" height="8" rx="4" class="blur"/><path d="M913 415h275" class="line"/><circle cx="924" cy="443" r="5" fill="#a48dff"/><rect x="940" y="434" width="126" height="8" rx="4" class="blur"/><rect x="1112" y="434" width="76" height="8" rx="4" class="blur"/><path d="M913 464h275" class="line"/><circle cx="924" cy="492" r="5" fill="#5ee0ad"/><rect x="940" y="483" width="145" height="8" rx="4" class="blur"/><rect x="1112" y="483" width="76" height="8" rx="4" class="blur"/></g>
+  <rect x="292" y="568" width="920" height="132" rx="17" class="card"/><text x="316" y="601" class="t" font-size="15" font-weight="650">Lançamentos recentes</text><text x="316" y="622" class="m" font-size="11">Entradas e saídas organizadas em um só lugar</text>
+  <g><path d="M316 645h872M316 674h872" class="line"/><circle cx="329" cy="659" r="7" fill="#193a32"/><path d="M326 659h6m-3-3v6" stroke="#5ee0ad" stroke-width="1.2"/><rect x="346" y="655" width="138" height="7" rx="3.5" class="blur"/><rect x="618" y="655" width="71" height="7" rx="3.5" class="blur"/><rect x="782" y="655" width="88" height="7" rx="3.5" class="blur"/><rect x="1043" y="655" width="104" height="7" rx="3.5" class="blur"/><circle cx="329" cy="688" r="7" fill="#3b2730"/><path d="M326 688h6" stroke="#ff7181" stroke-width="1.2"/><rect x="346" y="684" width="117" height="7" rx="3.5" class="blur"/><rect x="618" y="684" width="82" height="7" rx="3.5" class="blur"/><rect x="782" y="684" width="88" height="7" rx="3.5" class="blur"/><rect x="1043" y="684" width="104" height="7" rx="3.5" class="blur"/></g>
+</svg>

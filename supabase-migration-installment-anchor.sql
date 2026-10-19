@@ -1,0 +1,2 @@
+-- Não é necessário executar esta migração para o painel atual.
+-- A data inicial é persistida pela combinação dos campos due_date e paid_installments já existentes.
