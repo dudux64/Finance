@@ -1,5 +1,7 @@
 # Finança
 
+**Versão atual: 0.0.1**
+
 Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclui visão mensal, gráficos, calendário, dívidas parceladas, assinaturas, autenticação Supabase, perfis selecionáveis e backup JSON.
 
 > **Privacidade:** este repositório contém apenas o aplicativo, sem exportações dos seus dados. A imagem abaixo é uma prévia sem saldos ou lançamentos reais.
