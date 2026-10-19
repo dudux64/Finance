@@ -1,2 +1,2 @@
--- Não é necessário executar esta migração para o painel atual.
--- A data inicial é persistida pela combinação dos campos due_date e paid_installments já existentes.
+-- Adiciona a data da primeira parcela sem alterar nem apagar os registros existentes.
+alter table public.debts add column if not exists first_due_date date;

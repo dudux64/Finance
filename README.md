@@ -30,7 +30,8 @@ Não envie backups JSON, capturas com valores financeiros, arquivos `.env`, toke
 
 - O `supabase-config.js` contém uma chave publicável `sb_publishable_`, destinada ao cliente web. Chaves `sb_secret_` e `service_role` nunca devem estar no navegador ou no GitHub.
 - RLS está habilitado nas tabelas financeiras. O SQL atual autoriza uma conta autenticada na tabela `finance_access` e deixa os dois perfis acessíveis a essa conta. O seletor Dudu/Paloma é uma separação de organização da interface, não uma barreira de autorização: quem entrar com a conta compartilhada pode acessar os dois perfis.
-- O código salva localmente e sincroniza com Supabase. Algumas gravações/remoções são iniciadas em segundo plano e a interface pode indicar sucesso antes de a resposta do banco ser confirmada.
+- Edições comuns aguardam a resposta do Supabase e restauram o estado local anterior se o banco não confirmar. A importação tenta preservar os dados existentes até concluir os envios, mas as chamadas REST não formam uma única transação.
+- A data de início das parcelas é enviada à coluna `debts.first_due_date`; bancos já existentes precisam da migração `supabase-migration-installment-anchor.sql`. Datas históricas que nunca foram persistidas não podem ser recuperadas automaticamente.
 - Bibliotecas e fontes são carregadas de CDNs externos. Uma política CSP e dependências locais com versões fixadas ainda não estão configuradas.
 - O código foi revisado manualmente para esta preparação, mas isso não é uma auditoria formal nem teste de penetração.
 

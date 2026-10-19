@@ -31,8 +31,10 @@ create table if not exists public.debts (
   total_installments integer not null check(total_installments>0),
   paid_installments integer not null default 0 check(paid_installments>=0),
   due_date date not null,
+  first_due_date date,
   created_at timestamptz not null default now()
 );
+alter table public.debts add column if not exists first_due_date date;
 create table if not exists public.subscriptions (
   id uuid primary key default gen_random_uuid(),
   profile_id text not null references public.finance_profiles(id),
