@@ -1,6 +1,6 @@
 # Finança
 
-**Versão atual: 0.0.1**
+**Versão atual: 0.0.2**
 
 Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclui visão mensal, gráficos, calendário, dívidas parceladas, assinaturas, autenticação Supabase, perfis selecionáveis e backup JSON.
 
@@ -20,6 +20,11 @@ Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclu
 - `supabase-config.js`: URL do projeto e chave publicável.
 - `supabase-schema.sql`: tabelas, políticas RLS e autorização do usuário.
 - `supabase-migration-installment-anchor.sql`: migração para datas de referência das parcelas.
+
+## Histórico de versões
+
+- `0.0.2`: opção para ampliar/recolher os painéis e tabela de lançamentos ajustada para manter as ações visíveis.
+- `0.0.1`: primeira versão documentada do dashboard.
 
 ## Publicar
 
