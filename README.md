@@ -1,6 +1,6 @@
 # Finança
 
-**Versão preparada: 0.0.4**
+**Versão preparada: 0.0.5**
 
 Painel financeiro pessoal em português, feito com HTML, CSS e JavaScript. Inclui visão mensal, gráficos, calendário, dívidas parceladas, assinaturas, autenticação Supabase, perfis selecionáveis e backup JSON.
 
@@ -27,6 +27,7 @@ Com Node.js instalado, execute `node --test` na raiz do projeto. Os testes cobre
 
 ## Histórico de versões
 
+- `0.0.5`: publicação automática da aplicação no GitHub Pages a partir da `main`.
 - `0.0.4`: novos tipos de gráfico, indicadores mensais revisados, ordenação por cabeçalho nos lançamentos, ajustes na área de cartão e validação reforçada dos backups.
 - `0.0.3`: edição rápida de status e categoria nos lançamentos, filtro de despesas por pagas/total, ordenação personalizável nas listas e melhorias de alinhamento.
 - `0.0.2`: opção para ampliar/recolher os painéis e tabela de lançamentos ajustada para manter as ações visíveis.
@@ -34,9 +35,9 @@ Com Node.js instalado, execute `node --test` na raiz do projeto. Os testes cobre
 
 ## Publicar
 
-Para publicar como site, use um host HTTPS e configure a URL de retorno correspondente em **Supabase → Authentication → URL Configuration**. Mantenha o repositório privado enquanto o aplicativo usa uma conta compartilhada e contém a configuração do seu projeto Supabase.
+O workflow `.github/workflows/deploy-pages.yml` publica a aplicação no GitHub Pages quando uma alteração chega à `main`. Na primeira publicação, configure **Settings → Pages → Build and deployment → Source: GitHub Actions**. O site fica em `https://dudux64.github.io/Projeto---Finan-as/`.
 
-Não envie backups JSON, capturas com valores financeiros, arquivos `.env`, tokens, senhas ou chaves secretas. O `.gitignore` bloqueia os formatos comuns, mas sempre confira a lista de arquivos antes de fazer push.
+O GitHub Pages é acessível publicamente, mesmo quando o repositório é privado. A página inclui apenas os arquivos necessários para executar o painel e o login Supabase continua protegendo os dados financeiros. Não envie backups JSON, capturas com valores financeiros, arquivos `.env`, tokens, senhas ou chaves secretas. O `.gitignore` bloqueia os formatos comuns, mas sempre confira a lista de arquivos antes de fazer push.
 
 ## Segurança e limites conhecidos
 
